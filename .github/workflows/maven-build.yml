@@ -36,5 +36,5 @@ jobs:
         name: Deploy
         with:
           kubeconfig: ${{ secrets.KUBE_CONFIG }}
-          args: get pods -A
+          args: apply -f k8s/deployment.yaml
       
