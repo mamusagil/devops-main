@@ -32,6 +32,13 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           repository: mamusagil/devops-main
           tags: latest
+
+      - uses: danielr1996/kubectl-action@1.0.0
+        name: Deploy
+        with:
+          kubeconfig: ${{ secrets.KUBE_CONFIG }}
+          args: apply -f k8s/deployment.yaml
+          
       - uses: danielr1996/kubectl-action@1.0.0
         name: Rollout
         with:
