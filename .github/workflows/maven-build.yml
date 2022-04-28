@@ -37,8 +37,8 @@ jobs:
         name: Deploy
         with:
           kubeconfig: ${{ secrets.KUBE_CONFIG }}
-          args: apply -f k8s/deployment.yaml
-          
+          args: apply -f k8s/deployment.yml
+
       - uses: danielr1996/kubectl-action@1.0.0
         name: Rollout
         with:
