@@ -36,4 +36,4 @@ jobs:
         name: Rollout
         with:
           kubeconfig: ${{ secrets.KUBE_CONFIG }}
-          args: rollout restart deployment/sprinapp
+          args: rollout restart deployment/springapp
