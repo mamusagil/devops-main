@@ -12,7 +12,7 @@ specs:
     spec:
       containers:
         - name: springapp
-          image: mamusagil/springapp
+          image: mamusagil/devops-main:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
