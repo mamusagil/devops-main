@@ -33,8 +33,7 @@ jobs:
           repostory: mamusagil/pet
           tags: latest
       - uses: danielr1996/kubectl-action@1.0.0
-        name: Deploy
+        name: Rollout
         with:
           kubeconfig: ${{ secrets.KUBE_CONFIG }}
-          args: apply -f k8s/deployment.yaml
-      
+          args: rollout restart deployment/kubernetesdemo
