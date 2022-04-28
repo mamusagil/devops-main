@@ -33,7 +33,8 @@ jobs:
           repostory: mamusagil/pet
           tags: latest
       - uses: danielr1996/kubectl-action@1.0.0
+        name: Deploy
         with:
-          base64-kube-config: ${{ secrets.KUBE_CONFIG }}
+          kubeconfig: ${{ secrets.KUBE_CONFIG }}
           args: get pods -A
       
