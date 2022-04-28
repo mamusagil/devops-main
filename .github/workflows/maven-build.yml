@@ -36,5 +36,4 @@ jobs:
         with:
           base64-kube-config: ${{ secrets.KUBE_CONFIG }}
           args: get pods -A
-      - run: kubectl get pods
       
