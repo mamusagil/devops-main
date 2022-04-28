@@ -30,7 +30,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          repostory: mamusagil/devops-main
+          repository: mamusagil/devops-main
           tags: latest
       - uses: danielr1996/kubectl-action@1.0.0
         name: Rollout
