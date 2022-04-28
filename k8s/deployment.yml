@@ -4,7 +4,7 @@ metadata:
   name: kubernetesdemo
   labels:
     app: kubernetesdemo
-spec:
+specs:
   containers:
   - name: app-container1
   image: eu.gcr.io/darwin-imagepull-project/app-container1
