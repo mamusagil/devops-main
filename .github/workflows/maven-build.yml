@@ -32,7 +32,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           repostory: mamusagil/pet
           tags: latest
-      - uses: tale/kubectl-action@v1.0.1
+      - uses: danielr1996/kubectl-action@1.0.0
         with:
           base64-kube-config: ${{ secrets.KUBE_CONFIG }}
       - run: kubectl get pods
